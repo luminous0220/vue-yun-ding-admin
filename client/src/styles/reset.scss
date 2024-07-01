@@ -1,0 +1,115 @@
+div,
+pre,
+article,
+aside,
+canvas,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+html,
+body,
+#app {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* 解决 h1 标签在 webkit 内核浏览器中文字大小失效问题 */
+:-webkit-any(article, aside, nav, section) h1 {
+  font-size: 2em;
+}
+
+/* 去除input type=number 的默认样式 */
+input[type='number'] {
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 去除 input 默认填充背景色 */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/* 清除移动端 input 样式  */
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* 更好看的滚动条  */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 6px;
+}
+::-webkit-scrollbar-corner, /* 滚动条角落 */
+ ::-webkit-scrollbar-thumb,
+ ::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  /* 滚动条轨道 */
+  background-color: rgba(180, 160, 120, 0.03);
+}
+::-webkit-scrollbar-thumb {
+  /* 滚动条手柄 */
+  background-color: rgb(139, 139, 139, 0.6);
+}
+
+textarea {
+  resize: none !important;
+}

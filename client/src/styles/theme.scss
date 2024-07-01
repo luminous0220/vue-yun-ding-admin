@@ -1,0 +1,22 @@
+html {
+  --header-height: 52px;
+  --el-menu-active-color: #fff !important;
+  --el-menu-text-color: #bbb !important;
+  --el-menu-hover-bg-color: transparent !important;
+  --el-menu-item-height: 48px !important;
+  --el-menu-sub-item-height: 48px !important;
+}
+
+html.light {
+  --bg-header-color: #ecedef;
+  --el-menu-bg-color: #0c2135 !important;
+  --el-sub-menu-bg-color: #001529 !important;
+  --loading-bg-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+html.dark {
+  --bg-header-color: #000000;
+  --el-menu-bg-color: #1d1e1f !important;
+  --el-sub-menu-bg-color: #18181c !important;
+  --loading-bg-color: rgba(0, 0, 0, 0.8) !important;
+}
